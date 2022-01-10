@@ -1,0 +1,44 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 81.107.121.148
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1630506457843
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1630512601327
+  login: 1630505691238
+money: '1000'
+last-account-name: JimTheWolf
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 141.6980806388846
+  y: 62.0
+  z: 556.7725176583818
+  yaw: -65.49737548828125
+  pitch: 5.99985408782959
+homes:
+  home:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 37.95243919123253
+    y: 75.0
+    z: 514.5765402472322
+    yaw: 122.7615966796875
+    pitch: 29.549999237060547
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 38.06616905107785
+  y: 74.0
+  z: 513.9458938078204
+  yaw: -169.28846740722656
+  pitch: 10.800010681152344

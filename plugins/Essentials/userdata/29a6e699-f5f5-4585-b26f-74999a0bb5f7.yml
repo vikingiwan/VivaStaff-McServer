@@ -1,0 +1,45 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 65.32.188.120
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1641787693382
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1641787849442
+  login: 1641787299344
+money: '1000.69'
+last-account-name: AidenZOFCL
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 6.681146171646282
+  y: 89.0
+  z: 536.0088055628864
+  yaw: 0.50103759765625
+  pitch: -5.850080966949463
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 13.158612227735041
+  y: 99.0
+  z: 674.2830582637806
+  yaw: 99.44881439208984
+  pitch: 33.45005798339844
+nickname: AidenZ
+homes:
+  home:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 69.54578349062386
+    y: 75.0
+    z: 420.753191806521
+    yaw: 0.2945556640625
+    pitch: 3.5999908447265625

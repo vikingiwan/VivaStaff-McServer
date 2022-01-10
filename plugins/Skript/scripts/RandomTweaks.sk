@@ -1,0 +1,13 @@
+#Random Twaks by: J.Hunter, JHLabs
+
+command /killwand:
+	permission: "sys.rank.owner"
+	trigger:
+		give player {killwand}
+	#
+#
+
+on rightclick:
+	player's tool is {killwand}:
+		player has permission "sys.rank.owner":
+			kill player's target

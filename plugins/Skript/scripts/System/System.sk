@@ -1,0 +1,99 @@
+# ########### System ############
+# Handles important system
+# functions like graylisting,
+# core commands, and more.
+#
+# Dev: Iwan
+# ###############################
+
+#Set global variables such as prefixes:
+on skript load:
+	set {botprefix} to "&f[<##881A51>VivaBot&f]&f"
+	set {cmdDeny} to formatted "&f[<##881A51>VivaBot&f]&f &fYou do &cnot &fhave access to that command!"
+	set {VERSION} to "v0.1a"
+	set {MC-VERSION} to "1.17.x"
+#
+
+#Main system command:
+command /system <text="none">:
+	trigger:
+		set {_prefix} to "&f[<##881A51>VivaBot&f]&f"
+		if arg-1 is "none":
+			send "&f---------------------[<##881A51>System&f]-------------------------"
+			send ""
+			if sender has permission "sys.rank.leader":
+				send "&a/system info &fto show current system stats."
+			
+			if sender has permission "sys.rank.owner":
+				#SHow admin options
+				send "&a/system announce &fto make an announcement"
+				send "&a/system broadcaster &fto toggle the broadcaster"
+				send "&a/system help &fto view plugin helps"
+				send "&a/system restart &fto restart the server"
+				
+			send ""
+			send "&fServer version &c%{VERSION}% &f| MC version: &a%{MC-VERSION}%&f"
+			send "&f-----------------------------------------------------"
+		#
+		if arg-1 is "broadcaster":
+			if sender has permission "sys.rank.owner":
+				if {broadcaster} is true:
+					set {broadcaster} to false
+					send "%{_prefix}% &fBroadcaster has been &cDISABLED"
+				else if {broadcaster} is false:
+					set {broadcaster} to true
+					send "%{_prefix}% &fBroadcaster has been &aENABLED"
+				#
+			else:
+				send {cmdDeny}
+			#
+		#
+		if arg-1 is "info":
+			if sender has permission "sys.rank.leader":
+				send ""
+				make sender run command "/etps" as op
+				make sender run command "/tps" as op
+			#
+			else:
+				send {cmdDeny}
+		#
+		if arg-1 is "help":
+			if sender has permission "sys.rank.owner":
+				make sender execute "/essentials:help"
+			else:
+				send {cmdDeny}
+			#
+		#
+		if arg-1 is "announce":
+			if sender has permission "sys.rank.owner":
+				send ""
+				send formatted "%{helprefix}% &fUsage: &a/announce <option> <msg>"
+				send ""
+				send "Options: 1-General announcement"
+				send ""
+				send "Example: &a/announce 1 Drop party at spawn starting now!"
+				send ""
+			else:
+				send {cmdDeny}
+			#
+		#
+		if arg-1 is "restart":
+			if sender has permission "sys.rank.owner":
+				send formatted "%{botprefix}% &fInitiating restart in 5 minutes..."
+				wait 5 seconds
+				make console execute "/announce 1 Server restarting in 5 minutes!"
+				wait 4 minutes
+				make console execute "/announce 1 SERVER RESTARTING IN 1 MINUTE! GET TO A SAFE SPOT!"
+				wait 1 minutes
+				make console execute "/announce 1 SERVER RESTARTING NOW!"
+				wait 10 seconds
+				make console execute "/save-all"
+				make console execute "/stop"
+	#
+#
+
+# Unlock all recipes for players
+on join:
+	wait 5 seconds
+	execute console command "/minecraft:recipe give %player% *"
+#

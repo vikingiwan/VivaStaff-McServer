@@ -1,0 +1,34 @@
+PlayerMapStore:
+  mapList:
+  - name: Map
+    mapID: 0
+    id: Map
+    type: SINGLE
+  - columns: 2
+    name: Map
+    id: Map-1
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 1
+    - 2
+    - 3
+    - 4
+  - columns: 2
+    name: Map
+    id: Map-2
+    type: POSTER
+    rows: 2
+    mapsIDs:
+    - 5
+    - 6
+    - 7
+    - 8
+  - name: Map
+    mapID: 9
+    id: Map-3
+    type: SINGLE
+  - name: Map
+    mapID: 10
+    id: Map-4
+    type: SINGLE

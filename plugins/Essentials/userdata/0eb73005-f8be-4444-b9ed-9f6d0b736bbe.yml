@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 67.189.59.11
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1629683412694
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1630276114977
+  login: 1630275642493
+money: '1000'
+last-account-name: LarryMyster
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 114.67677414084825
+  y: 70.0
+  z: 245.69999998807907
+  yaw: 9.0631103515625
+  pitch: -0.4502524733543396
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: -91.72270490199959
+  y: 89.0
+  z: 698.1542669684668
+  yaw: -148.21478271484375
+  pitch: 8.100300788879395

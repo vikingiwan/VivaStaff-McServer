@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 71.187.54.146
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1641788363038
+  login: 1641788345791
+money: '1000'
+last-account-name: TheFaintGames
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 168.5
+  y: 72.0
+  z: 213.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: -112.4659971320253
+  y: 90.0
+  z: 523.0084414958096
+  yaw: -140.01797485351562
+  pitch: 13.065853118896484

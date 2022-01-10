@@ -1,0 +1,29 @@
+#################################
+#                               #
+# Configuration for RHLeafDecay #
+#                               #
+#################################
+
+# [DEU] Freilassen wenn alle Welten erlaubt sind
+# [ENG] Leave empty to allow all worlds
+OnlyInWorlds: []
+
+# [DEU] Welten die vom Plugin ausgeschlossen werden
+# [ENG] Worlds that will be ignored by the plugin
+ExcludeWorlds: []
+
+# [DEU] Verzögerung bei Ticks, um einen abgebauten Block zu prüfen. Muss mindestens 5 sein!
+# [ENG] Delay in ticks of the break block checks. Minimum is 5!
+BreakDelay: 8
+
+# [DEU] Verzögerung in Ticks, um verfallende Blätter zu prüfen
+# [ENG] Delay in ticks to check for decaying leaves
+DecayDelay: 4
+
+# [DEU] (Optional) Partikel für Blätter aktivieren
+# [ENG] (Optional) Enable particle for decaying leaves
+SpawnParticles: true
+
+# [DEU] (Optional) Geräusche beim Decay
+# [ENG] (Optional) Enable sounds for decaying leaves
+PlaySound: true

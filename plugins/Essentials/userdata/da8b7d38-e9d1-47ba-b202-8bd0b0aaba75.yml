@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 79.113.203.163
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1627388735821
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1628277242689
+  login: 1628275213168
+money: '1004.20'
+last-account-name: endriu3314
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 134.5
+  y: 125.0
+  z: 744.5
+  yaw: 30.599945068359375
+  pitch: 4.949995040893555
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 67.5
+  y: 83.0
+  z: 419.5
+  yaw: 45.000003814697266
+  pitch: 0.0

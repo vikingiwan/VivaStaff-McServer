@@ -1,0 +1,44 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 94.13.135.86
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1629672846590
+  login: 1629664353280
+money: '1000'
+last-account-name: Josh2k5
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 183.5
+  y: 71.0
+  z: 207.5
+  yaw: 3.5576093196868896
+  pitch: 0.0
+homes:
+  home:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 373.1535731227125
+    y: 74.0
+    z: -477.85517515020365
+    yaw: 78.010009765625
+    pitch: 34.813331604003906
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 361.76435044760126
+  y: 74.5
+  z: -481.69999998807907
+  yaw: 164.0576171875
+  pitch: 23.464927673339844

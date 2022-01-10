@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 193.154.254.19
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1630955649815
+  login: 1630955629328
+money: '1000'
+last-account-name: mamkifi
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 166.5
+  y: 66.0
+  z: 206.5
+  yaw: 1.7460187673568726
+  pitch: 0.0
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: -11.301767447460868
+  y: 97.0
+  z: 605.4640031371114
+  yaw: 164.7398681640625
+  pitch: 46.04994201660156

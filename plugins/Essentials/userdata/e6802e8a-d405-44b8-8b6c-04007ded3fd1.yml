@@ -1,0 +1,37 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 85.190.82.73
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1627336566310
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1627339777402
+  login: 1627331156447
+money: '1000'
+last-account-name: Witchsz
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 17.357436016159113
+  y: 32.0
+  z: 225.12155857339886
+  yaw: -50.109619140625
+  pitch: 27.450037002563477
+nickname: Reverend
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 254.85107355411964
+  y: 62.0506711041011
+  z: 280.6808625422893
+  yaw: -148.3035430908203
+  pitch: -6.450310230255127

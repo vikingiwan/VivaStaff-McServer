@@ -1,0 +1,44 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 104.243.175.100
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1641786542790
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1641786651633
+  login: 1641777500669
+money: '1000'
+last-account-name: Tanksome
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: -91.26587493146504
+  y: 78.0
+  z: 675.693494343439
+  yaw: 0.4063720703125
+  pitch: -0.6007722616195679
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 1.095179696872556
+  y: 63.0
+  z: 803.5923427461967
+  yaw: -106.94090270996094
+  pitch: 19.499988555908203
+homes:
+  home:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 4.699999988079071
+    y: -16.0
+    z: 1091.8631617895117
+    yaw: 176.1141357421875
+    pitch: 29.99911880493164

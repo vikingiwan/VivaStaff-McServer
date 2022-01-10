@@ -1,0 +1,163 @@
+groups:
+  unconfirmed:
+    options:
+      rank: '1000'
+      default: true
+    permissions:
+    - -modifyworld.*
+    - sys.rank.unconfirmed
+  member:
+    options:
+      rank: '900'
+    permissions:
+    - modifyworld.*
+    - essentials.afk
+    - essentials.home.bed
+    - essentials.list
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.motd
+    - essentials.msg
+    - essentials.msg.url
+    - essentials.ping
+    - essentials.seen
+    - essentials.realname
+    - essentials.suicide
+    - essentials.tpa
+    - essentials.tpacancel
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.spawn
+    - essentials.signs.color
+    - essentials.signs.rgb
+    - essentials.msg.color
+    - essentials.msg.rgb
+    - essentials.chat.color
+    - essentials.chat.rgb
+    - essentials.editsign
+    - essentials.editsign.color
+    - essentials.editsign.rgb
+    - essentials.editsign.unlimited
+    - essentials.home
+    - essentials.home.bed
+    - essentials.sethome
+    - essentials.sethome.bed
+    - sys.rank.member
+  leader:
+    inheritance:
+    - member
+    options:
+      rank: '99'
+    permissions:
+    - sys.rank.leader
+    - essentials.invsee
+    - essentials.kick
+    - essentials.kick.notify
+    - essentials.mute
+    - essentials.seen.banreason
+    - essentials.seen.alts
+    - essentials.tempban
+    - essentials.kick
+  owner:
+    inheritance:
+    - leader
+    options:
+      rank: '1'
+    permissions:
+    - sys.rank.owner
+    - permisssions.*
+    - '*'
+schema-version: 1
+users:
+  7129e1f7-437a-443c-aa52-11cbd8390639:
+    group:
+    - owner
+    - member
+    options:
+      name: Iwan
+  29a6e699-f5f5-4585-b26f-74999a0bb5f7:
+    group:
+    - leader
+    options:
+      name: AidenZOFCL
+  da8b7d38-e9d1-47ba-b202-8bd0b0aaba75:
+    group:
+    - leader
+    options:
+      name: endriu3314
+  c817f083-45c2-4db6-b3e2-e40533d48769:
+    group:
+    - member
+    options:
+      name: lambo603
+  a2d8fec1-6787-4a6a-8fc5-782e44a1c693:
+    group:
+    - member
+    options:
+      name: DannyJ98
+  6f77d866-49a1-40a3-bc8a-11ca703fcc3d:
+    group:
+    - member
+    options:
+      name: je01b
+  da5ecddb-e7d2-444c-a439-10ab7b18a41c:
+    group:
+    - member
+    options:
+      name: Tanksome
+  0eb73005-f8be-4444-b9ed-9f6d0b736bbe:
+    group:
+    - member
+    options:
+      name: LarryMyster
+  1b26c651-5e73-4261-9455-7e291ddefe80:
+    group:
+    - member
+    options:
+      name: PizzaMan99
+  437ad63d-70f7-49e5-be54-485502798b34:
+    group:
+    - member
+    options:
+      name: HwyHunter
+  f91207ff-88b0-4e68-b458-4e48641f3bc8:
+    group:
+    - member
+    options:
+      name: TheRealBurrito31
+  8292d299-04b6-4ec2-9d0c-3524feae5743:
+    group:
+    - member
+    options:
+      name: Josh2k5
+  6e0f8578-c388-46e3-9c60-a6bf9068d03a:
+    group:
+    - member
+    options:
+      name: ShiftZ_AsH69
+  f32d0540-794b-472f-aa52-1eee5bdef84c:
+    group:
+    - member
+    options:
+      name: mamkifi
+  e084c3d2-0ea0-498d-b4df-6fdd323544d6:
+    group:
+    - member
+    options:
+      name: JimTheWolf
+  0bb78e6e-d1c8-491d-980c-ff7ff0e3c660:
+    group:
+    - member
+    options:
+      name: Dolphinboy317
+  64acbba7-9ade-42d3-9133-813f168c31e5:
+    group:
+    - member
+    options:
+      name: Starchaser418
+  cdb0419e-5707-4a2d-89cc-beac2c19131a:
+    group:
+    - member
+    options:
+      name: TheFaintGames

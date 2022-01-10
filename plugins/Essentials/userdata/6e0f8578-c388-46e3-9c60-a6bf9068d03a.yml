@@ -1,0 +1,44 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 77.99.73.165
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1630528183664
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1630528231877
+  login: 1630528018573
+money: '1000'
+last-account-name: ShiftZ_AsH69
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 2.0819483181281426
+  y: 67.0
+  z: 801.2571819174829
+  yaw: 110.5599365234375
+  pitch: 25.650110244750977
+homes:
+  home:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 161.65903645889898
+    y: 54.666589762864646
+    z: 1290.3883128369353
+    yaw: -89.19994354248047
+    pitch: -75.59984588623047
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 9.44999929807453
+  y: 113.0
+  z: 724.7624999880791
+  yaw: 142.36009216308594
+  pitch: 75.1500473022461

@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 46.64.69.183
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1629591204990
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1629591641540
+  login: 1629588681530
+money: '1000'
+last-account-name: PizzaMan99
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: -7.5
+  y: 63.0
+  z: 362.5
+  yaw: -179.9566192626953
+  pitch: 2.40000057220459
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 134.89569341085092
+  y: 125.5
+  z: 743.8247659282113
+  yaw: 98.0152587890625
+  pitch: -19.200326919555664

@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 79.70.170.86
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1627338177429
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1627339714600
+  login: 1627328477596
+money: '1000'
+last-account-name: YaziSaphia
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 109.92211780109108
+  y: 66.0
+  z: 199.21533027361832
+  yaw: 149.76773071289062
+  pitch: 8.249814987182617
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 90.40903426313459
+  y: 63.0
+  z: 299.5790707396785
+  yaw: 45.78422546386719
+  pitch: 0.8995454907417297

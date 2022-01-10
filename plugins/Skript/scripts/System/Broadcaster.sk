@@ -1,0 +1,56 @@
+# ######### Broadcaster #########
+# Broadcasts important messages
+# to chat every 10 mins. supports
+# multiple different messages
+# Also handles announcements of
+# various kinds
+#
+# Dev: Iwan
+# ###############################
+
+on skript load:
+	set {bcSwitch} to 0
+#
+
+# Announcement system
+command /announce <number=0> <text>:
+	trigger:
+		if sender has permission "sys.rank.vanir":
+			if arg-1 is 0:
+				make sender execute "/system announce"
+			else if arg-1 is 1:
+				loop 4 times:
+					play sound "entity.experience_orb.pickup" with volume 1 to all players
+					wait 0.1 seconds
+				send "" to all players
+				send formatted "&f------------------[&5Announcement&f]----------------------" to all players
+				send formatted "%{botprefix}% &f%arg-2%" to all players
+				send "&f-----------------------------------------------------" to all players
+				send "" to all players
+			else if arg-1 is 2:
+				loop 4 times:
+					play sound "entity.experience_orb.pickup" with volume 1 to all players
+					wait 0.1 seconds
+				send "" to all players
+				send formatted "&f------------------[<##ff8c00>Announcement&f]----------------------" to all players
+				send "<##ff8c00>Vanir&f: %arg-2%" to all players
+				send "&f-----------------------------------------------------" to all players
+				send "" to all players
+			else if arg-1 is 3:
+				if sender has permission "sys.rank.aesir":
+					loop 4 times:
+						play sound "entity.experience_orb.pickup" with volume 1 to all players
+						wait 0.1 seconds
+					send "" to all players
+					send formatted "&f------------------[<##ff0000>Announcement&f]----------------------" to all players
+					send "<##ff0000>Aesir&f: &c%arg-2%" to all players
+					send "&f-----------------------------------------------------" to all players
+					send "" to all players
+				else:
+					send {cmdDeny}
+				#
+		else:
+			send {cmdDeny}
+		#
+	#
+#

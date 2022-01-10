@@ -1,0 +1,66 @@
+timestamps:
+  login: 1641776526631
+  logout: 1641791048631
+  lastteleport: 1641790804946
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 123.59867662931133
+  y: 125.0
+  z: 741.5678548589441
+  yaw: -67.1971435546875
+  pitch: 15.149982452392578
+ip-address: 47.17.65.216
+last-account-name: Iwan
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+money: '995.11'
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 1.4800992795031842
+  y: 67.0
+  z: 799.0202119448348
+  yaw: -177.83367919921875
+  pitch: 0.6008129715919495
+nickname: J.Hunter
+homes:
+  tmp:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 149.77611421733147
+    y: 89.0
+    z: 675.2583653640486
+    yaw: -83.7554931640625
+    pitch: 3.3002638816833496
+  h:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 127.69614460932952
+    y: 121.0
+    z: 741.9714368284432
+    yaw: 80.06830596923828
+    pitch: 6.900012016296387
+  smelter:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 122.64084551414722
+    y: 88.0
+    z: 741.5969135638506
+    yaw: 88.74575805664062
+    pitch: 11.55056381225586
+  leadership_base:
+    world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+    x: 67.74723888104364
+    y: 72.0
+    z: 448.99602902092164
+    yaw: -172.887451171875
+    pitch: 16.80080795288086

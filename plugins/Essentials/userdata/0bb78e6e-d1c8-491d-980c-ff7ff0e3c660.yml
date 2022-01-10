@@ -1,0 +1,36 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 47.220.138.166
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1631153744601
+  login: 1631153588978
+money: '1000'
+last-account-name: Dolphinboy317
+lastlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 182.5
+  y: 71.0
+  z: 203.5
+  yaw: 5.184588432312012
+  pitch: 0.0
+logoutlocation:
+  world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
+  x: 104.18422461849373
+  y: 64.0
+  z: 212.5654754945146
+  yaw: 62.46185302734375
+  pitch: 23.249958038330078

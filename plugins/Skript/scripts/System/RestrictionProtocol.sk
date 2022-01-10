@@ -1,0 +1,100 @@
+# #### Restriction Protocol ######
+# Handles blocking of sensitive
+# commands, and handles custom
+# help command.
+#
+# Dev: Iwan
+# ###############################
+
+on skript load:
+	set {password} to "thisisquad"
+	
+	#Define blocked/hidden commands
+	clear {blockedCmds::*}
+	add "version" to {blockedCmds::*}
+	add "ver" to {blockedCmds::*}
+	add "paper" to {blockedCmds::*}
+	add "bukkit" to {blockedCmds::*}
+	add "spigot" to {blockedCmds::*}
+	add "plugins" to {blockedCmds::*}
+	add "tps" to {blockedCmds::*}
+	add "gc" to {blockedCmds::*}
+
+
+#Custom Help Command for non-staff:
+command /help <number=1>:
+	trigger:
+		if arg-1 is 1:
+			send "&f---- &5List of Commands &f-- &5Page &d1&5/&d2 &f----"
+			send "&d/afk &f- Toggle afk status."
+			send "&d/balance &f- View your balance."
+			send "&d/balancetop &f- View a leaderboard of who has the most money."
+			send "&d/list &f- View a list of online players."
+			send "&d/mail &f- Send or view mail."
+			send "&d/msg &f- Send a message to another player. Alt. &d/w&f;&d/pm"
+			send "&d/reply &f- Reply to the last message sent to you. Alt. &d/r"
+			send "&d/pay &f- Pay another player."
+			send "&fType &d/help 2&f to read the next page."
+		else if arg-1 is 2:
+			send "&f---- &5List of Commands &f-- &5Page &d2&5/&d2 &f----"
+			send "&d/payconfirmtoggle &f- Toggles payment confirmation."
+			send "&d/seen - &fView when another player was last online."
+			send "&d/suicide &f- Die."
+			send "&d/tpa - &fRequest to teleport to another player."
+			send "&d/tpahere - &fRequest that a player teleport to you."
+			send "&d/tpacancel - &fCancel a request to teleport."
+			send "&d/warp - &fTeleport to a warp, or list warps."
+			send "&d/spawn - &fTeleport to spawn."
+#
+
+on command "/?":
+	cancel event
+	make player execute "/help"
+#
+
+#Block/Hide commands:
+on command:
+	if sender does not have permission "sys.rank.skald":
+		loop {blockedCmds::*}:
+			if command contains "%loop-value%":
+				cancel event
+				send "&cYou have been denied access for that command!"
+#
+
+
+#AUTH PROCESS!
+
+on place:
+	if {auth::%player%} is not true:
+		cancel event
+		send "&f[<##881A51>VivaBot&f]&f Please use &a/pass <password> &f to authenticate!"
+	#
+#
+on break:
+	if {auth::%player%} is not true:
+		cancel event
+		send "&f[<##881A51>VivaBot&f]&fPlease use &a/pass <password> &f to authenticate!"
+	#
+#
+
+
+on first join:
+	set {auth::%player%} to false
+	#send "&f[<##881A51>VivaBot&f]&f Please use &a/pass <password> &f to authenticate!"
+#
+
+on join:
+	if {auth::%player%} is not true:
+		set {auth::%player%} to false
+		send "&f[<##881A51>VivaBot&f]&f Please use &a/pass <password> &f to authenticate!"
+	#
+#
+
+command /pass <text>:
+	trigger:
+		if arg-1 is {password}:
+			send "&f[<##881A51>VivaBot&f] &fYou have been &aSuccessfully Authenticated!"
+			execute console command "/pex user %player's name% group set member"
+			set {auth::%player%} to true
+		else:
+			send "&f[<##881A51>VivaBot&f]&f &cAuthentication unsuccessful! &fPlease try again"
