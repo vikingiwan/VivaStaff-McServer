@@ -106,7 +106,7 @@ on spawn of zombie:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 2%:
+		chance of 0.5%:
 			cancel event
 			spawn zombie at event-entity
 
@@ -140,7 +140,7 @@ on spawn of creeper:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 10%:
+		chance of 2%:
 			cancel event
 			spawn creeper at event-entity
 			charge last spawned creeper
@@ -156,7 +156,7 @@ on spawn of skeleton:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 2%:
+		chance of 0.5%:
 			cancel event
 			spawn skeleton at event-entity
 
