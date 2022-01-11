@@ -1,18 +1,18 @@
 timestamps:
-  login: 1641776526631
-  logout: 1641791048631
-  lastteleport: 1641790804946
+  login: 1641867080266
+  logout: 1641870343229
+  lastteleport: 1641868926730
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 123.59867662931133
-  y: 125.0
-  z: 741.5678548589441
-  yaw: -67.1971435546875
-  pitch: 15.149982452392578
+  x: 125.77706663092167
+  y: 121.0
+  z: 742.671743256891
+  yaw: 78.6962890625
+  pitch: 17.793487548828125
 ip-address: 47.17.65.216
 last-account-name: Iwan
 teleportenabled: true
@@ -29,11 +29,11 @@ baltop-exempt: false
 money: '995.11'
 lastlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 1.4800992795031842
-  y: 67.0
-  z: 799.0202119448348
-  yaw: -177.83367919921875
-  pitch: 0.6008129715919495
+  x: 40.91373075368184
+  y: 45.5
+  z: 729.6198274482497
+  yaw: -87.758056640625
+  pitch: -22.650501251220703
 nickname: J.Hunter
 homes:
   tmp:
