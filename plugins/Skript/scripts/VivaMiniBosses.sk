@@ -193,6 +193,7 @@ on death:
 			if display name of victim is "&cZombie Quad":
 				set {_player} to attacker
 				broadcast "&d%{_player}'s display name% has slain &cZombie Quad &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("Quadkid" parsed as offline player) at player's location
 				chance of 50%:
 					drop a notch apple at victim's location
 				#
@@ -205,6 +206,7 @@ on death:
 			if display name of victim is "&cCreeper Aiden":
 				set {_player} to attacker
 				broadcast "&d%{_player}'s display name% has slain &cCreeper Aiden &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("AidenZOFCL" parsed as offline player) at player's location
 				chance of 50%:
 					drop a notch apple at victim's location
 		#
@@ -215,6 +217,7 @@ on death:
 			if display name of victim is "&cJohnny the Skeleton Hunter":
 				set {_player} to attacker
 				broadcast "&d%{_player}'s display name% has slain &cJohnny the Skeleton Hunter &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("Iwan" parsed as offline player) at player's location
 				chance of 50%:
 					drop a notch apple at victim's location
 	#
