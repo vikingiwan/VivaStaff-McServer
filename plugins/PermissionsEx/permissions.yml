@@ -43,6 +43,7 @@ groups:
     - essentials.home.bed
     - essentials.sethome
     - essentials.sethome.bed
+    - essentials.delhome
     - sys.rank.member
   leader:
     inheritance:
