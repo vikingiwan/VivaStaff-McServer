@@ -140,7 +140,7 @@ on spawn of creeper:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 2%:
+		chance of 1%:
 			cancel event
 			spawn creeper at event-entity
 			charge last spawned creeper
