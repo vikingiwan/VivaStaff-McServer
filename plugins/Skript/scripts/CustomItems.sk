@@ -47,6 +47,7 @@ command /storexp <number=0>:
 					send "&cYou do not have that many levels!"
 				else:
 					remove 1 of player's tool from player
+					remove arg-1 from player's level
 					give player 1 dragon's breath named "&5Bottle of Experience" with lore "&eStored levels:" and "&a%arg-1%"
 		else:
 			send "&cYou must be holding a glass bottle to use this command!"
