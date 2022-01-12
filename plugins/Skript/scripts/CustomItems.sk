@@ -55,7 +55,7 @@ on rightclick with dragon's breath:
 	if name of player's tool is "&5Bottle of Experience":
 		cancel event
 		set {_n} to line 2 of lore of player's tool parsed as number
-		execute "/xp give %player% %{_n}%l" as op
+		make player run command "xp give %player% %{_n}%l" as op
 
 
 
