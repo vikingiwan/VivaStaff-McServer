@@ -8,6 +8,7 @@ auth::437ad63d-70f7-49e5-be54-485502798b34, boolean, 01
 auth::7129e1f7-437a-443c-aa52-11cbd8390639, boolean, 01
 auth::cdb0419e-5707-4a2d-89cc-beac2c19131a, boolean, 01
 auth::da5ecddb-e7d2-444c-a439-10ab7b18a41c, boolean, 01
+auth::da8b7d38-e9d1-47ba-b202-8bd0b0aaba75, boolean, 01
 bcswitch, long, 0000000000000000
 blockedcmds::1, string, 800776657273696F6E
 blockedcmds::2, string, 8003766572
