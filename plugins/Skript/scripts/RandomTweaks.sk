@@ -1,13 +1,41 @@
-#Random Twaks by: J.Hunter, JHLabs
+on skript load:
 
-command /killwand:
-	permission: "sys.rank.owner"
-	trigger:
-		give player {killwand}
-	#
-#
+	# Variables
+	set {OrbOfRestoration} to snowball named "&5Orb of Restoration" with lore "&e- Eat to restore health and food instantly" and "&e- Craft with item to fully repair"
+
+	# Register new recipes:
+
+	# Orb of Restoration
+	register new shaped recipe for 1 snowball named "&5Orb of Restoration" with lore "&e- Eat to restore health and food instantly" and "&e- Craft with item to fully repair" using diamond, diamond, diamond, diamond, notch apple, diamond, diamond, diamond, diamond
+
+
+# Custom Item Functionality
+
+# Orb of restoration
+on rightclick with snowball:
+	if name of player's tool is "&5Orb of Restoration":
+		cancel event
+		heal player
+		feed player
+		send "&eYou have been fully restored!"
+		remove 1 of player's tool from player
 
 on rightclick:
-	player's tool is {killwand}:
-		player has permission "sys.rank.owner":
-			kill player's target
+	if player's offhand tool is snowball:
+		if name of player's offhand tool is "&5Orb of Restoration":
+			remove 1 of player's offhand tool from player
+			set durability of player's tool to 0
+			send "&eThe item you were holding has been fully repaired!"
+
+
+
+# Give Custom Items Command
+command /CI <text="none">:
+	trigger:
+		if sender has permission "sys.rank.owner":
+			if arg-1 is "none":
+				send "Please enter a valid argument"
+			else if arg-1 is "orb":
+				give player a snowball named "&5Orb of Restoration" with lore "&e- Eat to restore health and food instantly" and "&e- Craft with item to fully repair"
+		else:
+			send "&cYou do not have access to this command"
