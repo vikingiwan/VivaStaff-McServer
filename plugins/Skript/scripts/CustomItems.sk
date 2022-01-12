@@ -55,7 +55,8 @@ command /storexp <number=0>:
 on rightclick with dragon's breath:
 	if name of player's tool is "&5Bottle of Experience":
 		cancel event
-		set {_n} to line 2 of lore of player's tool parsed as number
+		set {_n} to line 2 of lore of player's tool
+		set {_n} to {_n} parsed as integer
 		make player run command "xp give %player% %{_n}%l" as op
 
 
