@@ -57,7 +57,7 @@ on rightclick with dragon's breath:
 		cancel event
 		set {_value::*} to uncolored line 2 of event-item's lore parsed as "Value: %integer% XP"
 		add {_value::1} to player's level
-		remove 1 from player's tool
+		remove 1 of player's tool from player
 
 
 
