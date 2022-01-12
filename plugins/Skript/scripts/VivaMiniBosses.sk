@@ -197,6 +197,19 @@ on spawn of skeleton:
 	#
 #
 
+# Batty Matty
+on spawn of bat:
+	chance of 50%:
+		cancel event
+		spawn bat at event-entity
+		set max health of last spawned bat to 50
+		set health of last spawned bat to 50
+		set displayname of last spawned bat to "&cBatty Matty"
+		apply speed 2 to the last spawned bat for 9999 minutes
+		stop
+	#
+#
+
 
 
 # Handling of killing a mini-boss
@@ -236,6 +249,19 @@ on death:
 				set {_player} to attacker
 				broadcast "&d%{_player}'s display name% has slain &cJohnny the Skeleton Hunter &fwith a &e%{_player}'s tool%&f!"
 				drop skull of ("Iwan" parsed as offline player) at victim's location
+				chance of 50%:
+					drop a notch apple at victim's location
+				#
+			#
+		#
+
+		# Death of Batty Matty
+
+		else if victim is a bat:
+			if displayname of victim is "&cBatty Matty":
+				set {_player} to attacker
+				broadcast "&d%{_player}'s display name% has slain &cBatty Matty &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("PizzaMan99" parsed as offline player) at victim's location
 				chance of 50%:
 					drop a notch apple at victim's location
 				#
