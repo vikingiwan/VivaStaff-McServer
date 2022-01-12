@@ -55,9 +55,10 @@ command /storexp <number=0>:
 on rightclick with dragon's breath:
 	if name of player's tool is "&5Bottle of Experience":
 		cancel event
-		set {_value::*} to uncolored line 2 of event-item's lore parsed as "Value: %integer% XP"
-		add {_value::1} to player's level
-		remove 1 of player's tool from player
+		set {_n} to uncolored line 2 of event-item's lore parsed as integer
+		send "{_n}
+		#add {_value::1} to player's level
+		#remove 1 of player's tool from player
 
 
 
