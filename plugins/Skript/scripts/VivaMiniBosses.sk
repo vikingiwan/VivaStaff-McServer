@@ -199,7 +199,7 @@ on spawn of skeleton:
 
 # Batty Matty
 on spawn of bat:
-	chance of 50%:
+	chance of 2%:
 		cancel event
 		spawn bat at event-entity
 		set max health of last spawned bat to 50
