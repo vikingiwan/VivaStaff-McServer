@@ -3,10 +3,6 @@ on skript load:
 	# Variables
 	set {OrbOfRestoration} to snowball named "&5Orb of Restoration" with lore "&e- Eat to restore health and food instantly" and "&e- Craft with item to fully repair"
 
-	# Wipe recipes of custom items
-
-	wipe crafting recipes for snowball
-
 
 	# Register new recipes:
 
