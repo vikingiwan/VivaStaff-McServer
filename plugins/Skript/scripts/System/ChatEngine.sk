@@ -50,6 +50,7 @@ on first join:
 on join:
 	broadcast "&7[&a+&7] &7%player% has joined the server"
 	set {prefix.%player%} to ""
+	set {devmode.%player%} to false
 #
 on quit:
 	broadcast "&7[&c-&7] &7%player% has left the server"
@@ -69,3 +70,20 @@ command /emoji:
 		send "':fu:' -> 凸(-_-)凸"
 		send "':tableflip' -> (╯°□°）╯︵ ┻━┻"
 		send "&e----------------------------------------------------"
+	#
+#
+
+# Dev mode
+command /devmode:
+	trigger:
+		if player has permission "dev.mode":
+			if {devmode.%sender%} is false:
+				set {devmode.%sender%} to true
+				send "&aDev-mode enabled"
+				set {prefix.%player%} to "&f[&dDev&f] &r"
+			else:
+				set {devmode.%sender%} to false
+				send "&cDev-mode disabled"
+				set {prefix.%player%} to ""
+		else:
+			send "&cYou do not have access to this command!"
