@@ -11,29 +11,29 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1641787693382
+  lastteleport: 1642131666314
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1641938808430
-  login: 1641938786325
+  logout: 1642131682044
+  login: 1642131566357
 money: '1000.69'
 last-account-name: AidenZOFCL
 lastlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 6.681146171646282
-  y: 89.0
-  z: 536.0088055628864
-  yaw: 0.50103759765625
-  pitch: -5.850080966949463
+  x: 57.322795595349675
+  y: 63.0
+  z: 454.8049470385438
+  yaw: 74.53924560546875
+  pitch: -40.05030059814453
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 69.49765153700527
-  y: 83.0
-  z: 423.69999998807907
-  yaw: -178.3545379638672
-  pitch: 10.200016975402832
+  x: 69.5
+  y: 75.0
+  z: 420.5
+  yaw: 3.1445560455322266
+  pitch: 24.149991989135742
 nickname: AidenZ
 homes:
   home:

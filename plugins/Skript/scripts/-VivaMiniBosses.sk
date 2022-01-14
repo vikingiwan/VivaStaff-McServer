@@ -1,0 +1,271 @@
+# _______________________________________________________________________________
+# |  __      ___              __  __ _       _ ____                              |
+# |  \ \    / (_)            |  \/  (_)     (_)  _ \                             |
+# |   \ \  / / ___   ____ _  | \  / |_ _ __  _| |_) | ___  ___ ___  ___  ___     |
+# |    \ \/ / | \ \ / / _` | | |\/| | | '_ \| |  _ < / _ \/ __/ __|/ _ \/ __|    |
+# |     \  /  | |\ V / (_| | | |  | | | | | | | |_) | (_) \__ \__ \  __/\__ \    |
+# |      \/   |_| \_/ \__,_| |_|  |_|_|_| |_|_|____/ \___/|___/___/\___||___/    |
+# |                                                                              |
+# -------------------------------------------------------------------------------
+
+# Adds VivaTrucking-themed mini-bosses to minecraft
+# By: J.Hunter, 2022
+
+
+#Set variables:
+
+on skript load:
+	set {VMB_VERSION} to "1.2"
+#
+
+#Main system command:
+command /vmb <text="none">:
+	trigger:
+		set {VMB_VERSION} to "1.2"
+		if arg-1 is "none":
+			send "&eViva MiniBosses &av%{VMB_VERSION}%"
+			send "- Use argument 'enable' or 'disable' to turn on or off"
+		#
+		else if arg-1 is "enable":
+			set {VMB_STATUS} to true
+			send "&aViva MiniBosses enabled!"
+		#
+		else if arg-1 is "disable":
+			set {VMB_STATUS} to false
+			send "&cViva MiniBosses disabled!"
+		#
+		else if arg-1 is "quad":
+			send "Spawning Zombie Quad..."
+			#
+			spawn zombie
+
+			# helmet
+			set {_helmet} to netherite helmet
+			set helmet of last spawned zombie to {_helmet}
+
+			# chestplate
+			set {_chestplate} to netherite chestplate
+			set chestplate of last spawned zombie to {_chestplate}
+
+			# leggings
+			set {_leggings} to netherite leggings
+			set leggings of last spawned zombie to {_leggings}
+
+			# boots
+			set {_boots} to netherite boots
+			set boots of last spawned zombie to {_boots}
+
+			#Weapon
+			set tool of last spawned zombie to netherite sword of sharpness 5
+			set max health of last spawned zombie to 100
+			set health of last spawned zombie to 100
+			set displayname of last spawned zombie to "&cZombie Quad"
+			apply strength 2 to the last spawned zombie for 9999 minutes
+			stop
+		#
+		else if arg-1 is "aiden":
+			spawn creeper at event-entity
+			charge last spawned creeper
+			#
+			set max health of last spawned creeper to 50
+			set health of last spawned creeper to 50
+			set displayname of last spawned creeper to "&cCreeper Aiden"
+			stop
+		#
+		else if arg-1 is "hunter":
+			spawn skeleton at event-entity
+
+			# helmet
+			set the helmet of the last spawned skeleton to skull of ("Iwan" parsed as offline player)
+
+			# chestplate
+			set {_chestplate} to leather chestplate
+			dye {_chestplate} red
+			set chestplate of last spawned skeleton to {_chestplate}
+
+			# leggings
+			set {_leggings} to leather leggings
+			dye {_leggings} red
+			set leggings of last spawned skeleton to {_leggings}
+
+			# boots
+			set {_boots} to leather boots
+			dye {_boots} red
+			set boots of last spawned skeleton to {_boots}
+
+			#Weapon
+			set tool of last spawned skeleton to bow of power 5
+			set max health of last spawned skeleton to 50
+			set health of last spawned skeleton to 50
+			set displayname of last spawned skeleton to "&cJohnny the Skeleton Hunter"
+			apply speed 2 to the last spawned skeleton for 9999 minutes
+		#
+	#
+#
+
+#New mobs!
+
+# ZOMBIE QUAD #
+on spawn of zombie:
+	if {VMB_STATUS} is true:
+		set {_random} to 1
+	if {_random} is set:
+		chance of 0.5%:
+			cancel event
+			spawn zombie at event-entity
+
+			# helmet
+			set {_helmet} to netherite helmet
+			set helmet of last spawned zombie to {_helmet}
+
+			# chestplate
+			set {_chestplate} to netherite chestplate
+			set chestplate of last spawned zombie to {_chestplate}
+
+			# leggings
+			set {_leggings} to netherite leggings
+			set leggings of last spawned zombie to {_leggings}
+
+			# boots
+			set {_boots} to netherite boots
+			set boots of last spawned zombie to {_boots}
+
+			#Weapon
+			set tool of last spawned zombie to netherite sword of sharpness 5
+			set max health of last spawned zombie to 100
+			set health of last spawned zombie to 100
+			set displayname of last spawned zombie to "&cZombie Quad"
+			apply strength 2 to the last spawned zombie for 9999 minutes
+			stop
+		#
+	#
+#
+
+# Creeper Aiden
+on spawn of creeper:
+	if {VMB_STATUS} is true:
+		set {_random} to 1
+	if {_random} is set:
+		chance of 1%:
+			cancel event
+			spawn creeper at event-entity
+			charge last spawned creeper
+			#
+			set max health of last spawned creeper to 50
+			set health of last spawned creeper to 50
+			set displayname of last spawned creeper to "&cCreeper Aiden"
+			stop
+		#
+	#
+#
+
+# Johnny the Skeleton Hunter
+on spawn of skeleton:
+	if {VMB_STATUS} is true:
+		set {_random} to 1
+	if {_random} is set:
+		chance of 0.5%:
+			cancel event
+			spawn skeleton at event-entity
+
+			# helmet
+			set the helmet of the last spawned skeleton to skull of ("Iwan" parsed as offline player)
+
+			# chestplate
+			set {_chestplate} to leather chestplate
+			dye {_chestplate} red
+			set chestplate of last spawned skeleton to {_chestplate}
+
+			# leggings
+			set {_leggings} to leather leggings
+			dye {_leggings} red
+			set leggings of last spawned skeleton to {_leggings}
+
+			# boots
+			set {_boots} to leather boots
+			dye {_boots} red
+			set boots of last spawned skeleton to {_boots}
+
+			#Weapon
+			set tool of last spawned skeleton to bow of power 5
+			set max health of last spawned skeleton to 50
+			set health of last spawned skeleton to 50
+			set displayname of last spawned skeleton to "&cJohnny the Skeleton Hunter"
+			apply speed 2 to the last spawned skeleton for 9999 minutes
+			stop
+		#
+	#
+#
+
+# Batty Matty
+on spawn of bat:
+	chance of 2%:
+		cancel event
+		spawn bat at event-entity
+		set max health of last spawned bat to 50
+		set health of last spawned bat to 50
+		set displayname of last spawned bat to "&cBatty Matty"
+		apply speed 2 to the last spawned bat for 9999 minutes
+		stop
+	#
+#
+
+
+
+# Handling of killing a mini-boss
+on death:
+	if attacker is a player:
+
+		# Death of Zombie Quad
+
+		if victim is a zombie:
+			if display name of victim is "&cZombie Quad":
+				set {_player} to attacker
+				broadcast "&d%{_player}'s display name% has slain &cZombie Quad &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("Quadkid" parsed as offline player) at victim's location
+				chance of 50%:
+					drop a notch apple at victim's location
+				#
+			#
+		#
+
+		# Death of Creeper Aiden
+
+		else if victim is a creeper:
+			if display name of victim is "&cCreeper Aiden":
+				set {_player} to attacker
+				broadcast "&d%{_player}'s display name% has slain &cCreeper Aiden &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("AidenZOFCL" parsed as offline player) at victim's location
+				chance of 50%:
+					drop a notch apple at victim's location
+				#
+			#
+		#
+
+		# Death of Hunter Skeleton
+
+		else if victim is a skeleton:
+			if display name of victim is "&cJohnny the Skeleton Hunter":
+				set {_player} to attacker
+				broadcast "&d%{_player}'s display name% has slain &cJohnny the Skeleton Hunter &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("Iwan" parsed as offline player) at victim's location
+				chance of 50%:
+					drop a notch apple at victim's location
+				#
+			#
+		#
+
+		# Death of Batty Matty
+
+		else if victim is a bat:
+			if displayname of victim is "&cBatty Matty":
+				set {_player} to attacker
+				broadcast "&d%{_player}'s display name% has slain &cBatty Matty &fwith a &e%{_player}'s tool%&f!"
+				drop skull of ("PizzaMan99" parsed as offline player) at victim's location
+				chance of 50%:
+					drop a notch apple at victim's location
+				#
+			#
+		#
+	#
+#

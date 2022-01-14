@@ -110,6 +110,12 @@ timings:
   server-name: Unknown Server
 world-settings:
   default:
+    slime-spawn-height:
+      swamp-biome:
+        maximum: 70.0
+        minimum: 50.0
+      slime-chunk:
+        maximum: 40.0
     wateranimal-spawn-height:
       maximum: default
       minimum: default

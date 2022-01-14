@@ -11,26 +11,26 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 1641951535555
+  lastteleport: 1642131666032
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1641786861689
-  login: 1641949372259
+  logout: 1642132717772
+  login: 1642123723946
 money: '1000'
 last-account-name: HwyHunter
 lastlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: -54.107257745424114
-  y: 70.0
-  z: 505.75984146929864
-  yaw: -69.09361267089844
-  pitch: 1.9181824922561646
+  x: 3299.1174142347345
+  y: 67.0
+  z: 4761.096638322233
+  yaw: 1.855224609375
+  pitch: 13.050180435180664
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: -96.76269213389467
+  x: -96.8046026903416
   y: 90.0
-  z: 687.1538853173562
-  yaw: 151.19932556152344
-  pitch: 23.2499942779541
+  z: 693.9425456129518
+  yaw: -101.418701171875
+  pitch: 16.94982147216797
