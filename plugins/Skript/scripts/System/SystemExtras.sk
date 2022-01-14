@@ -8,6 +8,6 @@ on skript load:
  # Playtime Command
 command /playtime <text="%player%">:
 	trigger:
-		set {_p} to arg-1 parsed as offline-player
+		set {_p} to arg-1 parsed as offline player
 		set {_t} to {_p}'s time played
 		send "%{VivaPrefix}% %arg-1%'s playtime is: &b%{_t}%"
