@@ -11,26 +11,27 @@ powertoolsenabled: true
 accepting-pay: true
 baltop-exempt: false
 timestamps:
-  lastteleport: 0
+  lastteleport: 1642131716177
   lastheal: 0
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1641788363038
-  login: 1641788345791
+  logout: 1642131723610
+  login: 1642131720600
 money: '1000'
 last-account-name: TheFaintGames
 lastlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 168.5
-  y: 72.0
-  z: 213.5
-  yaw: 0.0
-  pitch: 0.0
+  x: 56.59199673141526
+  y: 64.0
+  z: 455.0661164226041
+  yaw: 75.96685791015625
+  pitch: -48.665592193603516
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: -112.4659971320253
-  y: 90.0
-  z: 523.0084414958096
-  yaw: -140.01797485351562
-  pitch: 13.065853118896484
+  x: 69.68147825207996
+  y: 83.0
+  z: 419.52062300259627
+  yaw: 57.92658233642578
+  pitch: 5.250011920928955
+nickname: Faint
