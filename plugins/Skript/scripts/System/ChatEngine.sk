@@ -31,13 +31,13 @@ on chat:
 		replace ":tableflip:" in message with "(╯°□°）╯︵ ┻━┻"
 	
 	if sender has permission "sys.rank.owner":
-		send formatted "<tooltip:&7[&fClick me to pm <##ff1100>%player's display name%&7]><suggest command:/msg %player% >%{prefix.%player%}% <##ff1100>%player's display name%<reset>&f: %message%" to all players
+		send formatted "<tooltip:&7[&fClick me to pm <##ff1100>%player's display name%&7]><suggest command:/msg %player% >%{prefix.%player%}%<##ff1100>%player's display name%<reset>&f: %message%" to all players
 		send formatted "<##ff1100>%player's display name%<reset>&f: %message%" to console
 	else if sender has permission "sys.rank.leader":
 		send formatted "<tooltip:&7[&fClick me to pm <##9b59b6>%player's display name%&7]><suggest command:/msg %player% >{prefix.%player%}<##9b59b6>%player's display name%<reset>&f: %message%" to all players
 		send formatted "<##9b59b6>%player's display name%<reset>&f: %message%" to console
 	else if sender has permission "sys.rank.member":
-		send formatted "<tooltip:&7[&fClick me to pm <##881A51>%player's display name%&7]><suggest command:/msg %player% >{prefix.%player%} <##881A51>%player's display name%<reset>&f: %message%" to all players		
+		send formatted "<tooltip:&7[&fClick me to pm <##881A51>%player's display name%&7]><suggest command:/msg %player% >{prefix.%player%}<##881A51>%player's display name%<reset>&f: %message%" to all players		
 		send formatted "<##881A51>%player's display name%<reset>&f: %message%" to console
 	else:
 		broadcast "<##ff0000>&l⚠ &r<##9b59b6>BROKEN RANK <##ff0000>&l⚠ &7%sender% ❱ %message%"
