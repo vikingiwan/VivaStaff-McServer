@@ -49,8 +49,11 @@ on first join:
 	
 on join:
 	broadcast "&7[&a+&7] &7%player% has joined the server"
-	set {prefix.%player%} to ""
-	set {devmode.%player%} to false
+	if {prefix.%player%} is not set:
+		set {prefix.%player%} to ""
+	if {devmode.%player%} is true:
+		set {devmode.%player%} to false
+		set {prefix.%player%} to ""
 #
 on quit:
 	broadcast "&7[&c-&7] &7%player% has left the server"
