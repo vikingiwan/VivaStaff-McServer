@@ -15,13 +15,13 @@
 #Set variables:
 
 on skript load:
-	set {VMB_VERSION} to "1.2"
+	set {VMB_VERSION} to "1.2.1"
 #
 
 #Main system command:
 command /vmb <text="none">:
 	trigger:
-		set {VMB_VERSION} to "1.2"
+		set {VMB_VERSION} to "1.2.1"
 		if arg-1 is "none":
 			send "&eViva MiniBosses &av%{VMB_VERSION}%"
 			send "- Use argument 'enable' or 'disable' to turn on or off"
@@ -100,6 +100,15 @@ command /vmb <text="none">:
 			set displayname of last spawned skeleton to "&cJohnny the Skeleton Hunter"
 			apply speed 2 to the last spawned skeleton for 9999 minutes
 		#
+
+		else if arg-1 is "matty":
+			spawn bat at event-entity
+			set max health of last spawned bat to 50
+			set health of last spawned bat to 50
+			set displayname of last spawned bat to "&cBatty Matty"
+			apply speed 2 to the last spawned bat for 9999 minutes
+			stop
+		#
 	#
 #
 
@@ -110,7 +119,7 @@ on spawn of zombie:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 0.5%:
+		chance of 0.1%:
 			cancel event
 			spawn zombie at event-entity
 
@@ -146,7 +155,7 @@ on spawn of creeper:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 1%:
+		chance of 0.1%:
 			cancel event
 			spawn creeper at event-entity
 			charge last spawned creeper
@@ -164,7 +173,7 @@ on spawn of skeleton:
 	if {VMB_STATUS} is true:
 		set {_random} to 1
 	if {_random} is set:
-		chance of 0.5%:
+		chance of 0.1%:
 			cancel event
 			spawn skeleton at event-entity
 
@@ -199,14 +208,16 @@ on spawn of skeleton:
 
 # Batty Matty
 on spawn of bat:
-	chance of 2%:
-		cancel event
-		spawn bat at event-entity
-		set max health of last spawned bat to 50
-		set health of last spawned bat to 50
-		set displayname of last spawned bat to "&cBatty Matty"
-		apply speed 2 to the last spawned bat for 9999 minutes
-		stop
+	if {VMB_STATUS} is true:
+		chance of 0.1%:
+			cancel event
+			spawn bat at event-entity
+			set max health of last spawned bat to 50
+			set health of last spawned bat to 50
+			set displayname of last spawned bat to "&cBatty Matty"
+			apply speed 2 to the last spawned bat for 9999 minutes
+			stop
+		#
 	#
 #
 
