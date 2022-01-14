@@ -12,7 +12,23 @@ on chat:
 	# Emoji Renderer
 
 	if message contains "<3":
-		replace "<3" in message with "&d❤"
+		replace "<3" in message with "❤"
+	if message contains ":smoke:":
+		replace ":smoke:" in message with " ̳ ̳ ̳ ̳ ͙ ڪ "
+	if message contains ":)":
+		replace ":)" in message with "☺"
+	if message contains "wut":
+		replace "wut" in message with "ಠ_ಠ"
+	if message contains ":pick:":
+		replace ":pick:" in message with "⛏"
+	if message contains ":fire:":
+		replace "fire" in message with "🔥"
+	if message contains ":hug:":
+		replace ":hug:" in message with "(づ｡◕‿‿◕｡)づ"
+	if message contains ":fu:":
+		replace ":fu:" in message with "凸(-_-)凸"
+	if message contains ":tableflip:":
+		replace ":tableflip:" in message with "(╯°□°）╯︵ ┻━┻"
 	
 	if sender has permission "sys.rank.owner":
 		send formatted "<tooltip:&7[&fClick me to pm <##ff1100>%player's display name%&7]><suggest command:/msg %player% ><##ff1100>%player's display name%<reset>&f: %message%" to all players
@@ -37,3 +53,18 @@ on join:
 on quit:
 	broadcast "&7[&c-&7] &7%player% has left the server"
 #
+
+
+# Emoji list command
+command /emoji:
+	trigger:
+		send "&e----------------------Emoji List----------------------"
+		send "':)' -> ☺"
+		send "'<3' -> ❤"
+		send "'wut' -> ಠ_ಠ"
+		send "':pick:' -> ⛏"
+		send "':fire:' -> 🔥"
+		send "':hug:' -> (づ｡◕‿‿◕｡)づ"
+		send "':fu:' -> 凸(-_-)凸"
+		send "':tableflip' -> (╯°□°）╯︵ ┻━┻"
+		send "&e----------------------------------------------------"
