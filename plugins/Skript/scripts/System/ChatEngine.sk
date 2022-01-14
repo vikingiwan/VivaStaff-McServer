@@ -8,6 +8,12 @@
 
 on chat:
 	cancel event
+	
+	# Emoji Renderer
+
+	if message contains "<3":
+		replace "<3" in message with "&d❤"
+	
 	if sender has permission "sys.rank.owner":
 		send formatted "<tooltip:&7[&fClick me to pm <##ff1100>%player's display name%&7]><suggest command:/msg %player% ><##ff1100>%player's display name%<reset>&f: %message%" to all players
 		send formatted "<##ff1100>%player's display name%<reset>&f: %message%" to console
