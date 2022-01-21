@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1642131682044
-  login: 1642131566357
+  logout: 1642293884963
+  login: 1642291332325
 money: '1000.69'
 last-account-name: AidenZOFCL
 lastlocation:
@@ -29,11 +29,11 @@ lastlocation:
   pitch: -40.05030059814453
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 69.5
-  y: 75.0
-  z: 420.5
-  yaw: 3.1445560455322266
-  pitch: 24.149991989135742
+  x: 64.09295378110221
+  y: 80.0
+  z: 420.5094529378004
+  yaw: -70.6500244140625
+  pitch: 23.850452423095703
 nickname: AidenZ
 homes:
   home:

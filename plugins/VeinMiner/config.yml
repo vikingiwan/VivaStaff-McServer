@@ -66,6 +66,9 @@ BlockList:
   - minecraft:redstone_ore
   - minecraft:amethyst_block
   - minecraft:spruce_planks
+  - minecraft:red_concrete
+  - minecraft:green_concrete
+  - minecraft:light_blue_concrete
   Axe:
   - minecraft:acacia_log
   - minecraft:acacia_wood
@@ -95,6 +98,7 @@ BlockList:
   - minecraft:snow
   - minecraft:soul_sand
   - minecraft:soul_soil
+  - minecraft:clay
   Hoe:
   - minecraft:beetroots[age=3]
   - minecraft:brown_mushroom

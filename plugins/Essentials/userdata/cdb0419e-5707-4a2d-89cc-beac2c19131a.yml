@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 71.187.54.146
+ip-address: 185.187.243.82
 afk: false
 socialspy: false
 npc: false
@@ -16,8 +16,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1642131723610
-  login: 1642131720600
+  logout: 1642721953164
+  login: 1642721265829
 money: '1000'
 last-account-name: TheFaintGames
 lastlocation:
@@ -29,9 +29,9 @@ lastlocation:
   pitch: -48.665592193603516
 logoutlocation:
   world: 14ed9aea-50ff-48ae-8cb7-6b2a0e6989e6
-  x: 69.68147825207996
-  y: 83.0
-  z: 419.52062300259627
-  yaw: 57.92658233642578
-  pitch: 5.250011920928955
+  x: -113.08154627303334
+  y: 95.0
+  z: 523.465042468041
+  yaw: -95.75990295410156
+  pitch: 17.399805068969727
 nickname: Faint
