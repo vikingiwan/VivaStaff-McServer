@@ -350,9 +350,9 @@ cauldron:
 
   # -- Multiple Ingredients: --
   applemead_base:
-    name: Apple-Sugar brew
+    name: Apple-Honey brew
     ingredients:
-      - Sugar_Cane/3
+      - Honey_comb/3
       - Apple
     color: 'e1ff4d' # greenish yellow
     cookParticles:
@@ -535,7 +535,7 @@ recipes:
   mead:
     name: Awkward Mead/Mead/&6Golden Mead
     ingredients:
-      - Sugar_Cane/6
+      - Honey_Comb/6
     cookingtime: 3
     distillruns: 0
     wood: 2
@@ -549,7 +549,7 @@ recipes:
   ap_mead:
     name: Apple Mead/Sweet Apple Mead/&6Sweet Golden Apple Mead
     ingredients:
-      - Sugar_Cane/6
+      - Honey_Comb/6
       - Apple/2
     cookingtime: 4
     distillruns: 0
